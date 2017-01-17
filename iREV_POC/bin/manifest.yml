@@ -1,0 +1,7 @@
+---
+applications:
+  - name: predix-iREVBasic-poc
+    buildpack: https://github.com/muymoo/staticfile-buildpack.git
+    path: .
+    memory: 64M
+    stack: cflinuxfs2

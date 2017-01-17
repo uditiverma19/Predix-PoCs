@@ -1,0 +1,892 @@
+<section>
+  <div id="page" data-ng-controller="BacklogCtrl" class="well well-lg" style="padding-top:0px;">
+    <div class="row">
+      <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+        <h3 class="" style="margin-bottom: 0px;">DI/DGS Backlog</h3>
+      </div>
+      <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+        <div class="pull-right">
+          <h1>
+            <a class="btn btn-primary"><i
+              class="fa fa-question-circle fa-2x"></i></a> <a
+              class="btn btn-warning"><i class="fa fa-users fa-2x"></i></a> <a
+              href="#/" class="btn btn-default"><i class="fa fa-home fa-2x"></i></a>
+          </h1>
+
+        </div>
+      </div>
+    </div>
+    
+      <div id="zone" class="col-xs-12 col-sm-12 col-md-2 col-lg-2"
+        style="height: 250px;"></div>
+      <div id="modality" class="col-xs-12 col-sm-12 col-md-2 col-lg-2"
+        style="height: 250px;"></div>
+      <div id="credit" class="col-xs-12 col-sm-12 col-md-2 col-lg-2"
+        style="height: 250px;"></div>
+      <div id="unscheduled" class="col-xs-12 col-sm-12 col-md-3 col-lg-3"
+        style="height: 250px;"></div>
+      <div id="scheduled" class="col-xs-12 col-sm-12 col-md-3 col-lg-3"
+        style="height: 250px;"></div>
+      
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"
+        style="font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 8pt; margin-top: 10px;">
+          <label class="col-xs-5 col-sm-3 col-md-1 col-lg-1"> Zone: </label> <select class="col-xs-7 col-sm-3 col-md-2 col-lg-2"
+            id="zoneDropDown"
+            style="margin-bottom: 5px; font-family: Verdana, Arial, Helvetica, sans-serif;">
+
+            <option value="0">-- Select ALL --</option>
+
+            <option value="1">C</option>
+
+            <option value="2">E</option>
+
+            <option value="3">HQ</option>
+
+            <option value="4">W</option>
+
+          </select> <label class="col-xs-5 col-sm-3 col-md-1 col-lg-1"> Region: </label> <select class="col-xs-7 col-sm-3 col-md-2 col-lg-2"
+            id="regionDropDown"
+            style="margin-bottom: 5px;font-family: Verdana, Arial, Helvetica, sans-serif;">
+
+            <option value="0">-- Select ALL --</option>
+
+            <option value="1">DAL</option>
+
+            <option value="2">FL</option>
+
+            <option value="3">HOU</option>
+
+            <option value="4">W</option>
+
+            <option value="5">NY</option>
+
+            <option value="6">OHV</option>
+
+            <option value="7">PHI</option>
+
+          </select> <label class="col-xs-5 col-sm-3 col-md-1 col-lg-1" > RevRecQtr: </label> <select class="col-xs-7 col-sm-3 col-md-2 col-lg-2"
+            id="RevRecQtrDropDown"
+            style="margin-bottom: 5px;font-family: Verdana, Arial, Helvetica, sans-serif;">
+
+            <option value="0">-- Select ALL --</option>
+
+            <option value="1">16-Qt1</option>
+
+            <option value="2">16-Qt2</option>
+
+            <option value="3">16-Qt3</option>
+
+            <option value="4">16-Qt4</option>
+
+            <option value="5">Future</option>
+
+            <option value="6">Prior</option>
+
+          </select> <label class="col-xs-5 col-sm-3 col-md-1 col-lg-1"> PSS:</label>
+          <select class="col-xs-7 col-sm-3 col-md-2 col-lg-2" id="pssDropDown" style="margin-bottom: 5px; font-family: Verdana, Arial, Helvetica, sans-serif;">
+
+            <option value="0">-- Select ALL --</option>
+
+            <option value="1">Jim Waters</option>
+
+            <option value="2">Jonathan swift</option>
+
+            <option value="3">Leo capirio</option>
+
+            <option value="4">Messy</option>
+
+            <option value="5">Mike Rechard</option>
+
+            <option value="6">Ranjit Power</option>
+
+            <option value="7">Ronalida</option>
+
+            <option value="8">Willam Smith</option>
+
+          </select> <label class="col-xs-5 col-sm-3 col-md-1 col-lg-1"> AccountReps: </label> <select class="col-xs-7 col-sm-3 col-md-2 col-lg-2"
+            id="AcctrepsDropDown"
+            style="margin-bottom: 5px;font-family: Verdana, Arial, Helvetica, sans-serif;">
+
+            <option value="0">-- Select ALL --</option>
+
+            <option value="1">AE(Amanda)</option>
+
+            <option value="2">AE(Jenifer)</option>
+
+            <option value="3">AE(Jhon)</option>
+
+            <option value="4">AE(Micheal)</option>
+
+            <option value="5">AE(Smith)</option>
+
+          </select> <label class="col-xs-5 col-sm-3 col-md-1 col-lg-1"> Govt/Vaso: </label><select class="col-xs-7 col-sm-3 col-md-2 col-lg-2"
+            id="govvasoDropDown"
+            style="margin-bottom: 5px;font-family: Verdana, Arial, Helvetica, sans-serif;">
+
+            <option value="0">-- Select ALL --</option>
+
+            <option value="1">Michal Hussy</option>
+
+            <option value="2">De Villers</option>
+
+            <option value="3">Venkat Reddy</option>
+
+            <option value="4">Gyani Sharma</option>
+
+            <option value="5">David Jose</option>
+
+            <option value="6">Sam Flowers</option>
+
+          </select> <label class="col-xs-5 col-sm-3 col-md-1 col-lg-1"> Schedules: </label><select class="col-xs-7 col-sm-3 col-md-2 col-lg-2"
+            id="schdulesDropDown"
+            style="margin-bottom: 5px;font-family: Verdana, Arial, Helvetica, sans-serif;">
+
+            <option value="0">-- Select ALL --</option>
+
+            <option value="1">Scheduled</option>
+
+            <option value="2">Unscheduled</option>
+            
+      </select> 
+      <input class="col-xs-5 col-xs-offset-5 col-sm-3  col-sm-offset-3  col-md-2 col-md-offset-2 col-lg-2 col-lg-offset-1" type="button" id="filedSeletcedButtonID"
+            name="filedSeletcedButton" value="Field Selected"
+            style="font-size: 8pt; font-family: Verdana, Arial, Helvetica, sans-serif;">
+      
+      </div>
+      <br>
+      <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"
+        style="overflow: auto;">
+        <table id="searchItemNbr"></table>
+
+        <div align="right" id="pageRev"></div>
+      </div>
+      </div>
+    </div>
+
+</section>
+
+  
+<script type="text/javascript">
+
+
+
+var $ = jQuery.noConflict();
+
+
+
+jQuery(document).ready(function($) { 
+
+
+
+var defaultVal ="--Select ALL--";
+
+
+
+$("#searchItemNbr").jqGrid({
+
+
+
+   url: "https://irev-search-new.run.aws-usw02-pr.ice.predix.io/getAllDsvBackLogDetailsNew",
+
+
+
+    mtype: "GET",
+
+
+
+    datatype: "json",
+
+
+
+    colModel: [
+
+
+
+                    //{label: 'totalNumofRecords', name: 'totalNumofRecords'},
+
+
+
+                                    
+
+
+
+                    {label: 'GON', name: 'gon'},
+
+
+
+                     { label: 'Fset', name: 'fset'},
+
+
+
+                     {label: 'MoD', name: 'mod'},
+
+
+
+                      {label: 'ContractCustName', name: 'contractcustname'}, 
+
+
+
+                      { label: 'NEVTT', name: 'nevtt'},
+
+
+
+                       {label: 'CRD', name: 'crd'},
+
+
+
+                     {label: 'credit status', name: 'creditstatus'},
+
+
+
+                       {label: 'H', name: 'h'},                    
+
+
+
+                        { label: 'RevRecTerms', name: 'revrecterms'},
+
+
+
+                        { label: 'ROSD', name: 'rosd'},
+
+
+
+                        { label: 'SOSD', name: 'sosd'},                        
+
+
+
+                        {label: 'SalesH', name: 'salesh'},
+
+
+
+                      { label: 'PMIS Comment', name: 'pmiscomment'},
+
+
+
+                      {label: 'Comments', name: 'comments'},  
+
+
+
+                       { label: 'Construction', name: 'construction'},  
+
+
+
+                       {label: 'Order Chart', name: 'orderchart'},
+
+
+
+
+
+
+
+    ],
+
+
+
+   // jsonReader: { repeatitems:false, root:"backlogVOs" },
+
+
+
+    rowNum:10,
+
+
+
+    rowList:[10,20,30],
+
+
+
+    pager: '#pageRev',
+
+
+
+    sortname: 'GON',
+
+
+
+    recordpos: 'left',
+
+
+
+    viewrecords: true,
+
+
+
+    sortorder: "asc",
+
+
+
+  caption: "Search Results",
+
+
+
+  width:"auto" ,
+
+
+
+  height:"auto",
+
+
+
+});
+
+
+
+$('#searchItemNbr').jqGrid('setGridParam', {
+
+
+
+    gridComplete: function(){
+
+
+
+        //alert('gridComplete');
+
+
+
+        //$('#searchItemNbr').trigger('reloadGrid');
+
+
+
+    }
+
+
+
+});
+
+
+
+$("#searchItemNbr").jqGrid('navGrid','#pageRev',{add:false,del:false,edit:false,position:'right'});
+
+
+
+
+
+
+
+
+
+
+
+$('#filedSeletcedButtonID').click(function() {
+
+
+
+
+
+
+
+  
+
+
+
+  var zoneText= "";
+
+
+
+  var zoneVal= "";
+
+
+
+var regionText="";
+
+
+
+var regionval="";
+
+
+
+var revRecQtrText="";
+
+
+
+var revRecQtrVal="";
+
+
+
+var AcctrepsText="";
+
+
+
+var Acctrepsval="";
+
+
+
+var pssText="";
+
+
+
+var pssVal="";
+
+
+
+var govvasoText="";
+
+
+
+var govvasoval="";
+
+
+
+var schdulesText="";
+
+
+
+var schdulesVal="";
+
+
+
+
+
+
+
+$( "#zoneDropDown option:selected" ).each(function() {
+
+
+
+      zoneText = $( this ).text();
+
+
+
+      zoneVal = $(this).val();     
+
+
+
+    });
+
+
+
+$( "#regionDropDown option:selected" ).each(function() {
+
+
+
+      regionText = $( this ).text();
+
+
+
+      zoneVal = $(this).val();  
+
+
+
+      //alert('regionTextregionval'+regionText+regionval);   
+
+
+
+    });
+
+
+
+$( "#RevRecQtrDropDown option:selected" ).each(function() {
+
+
+
+      revRecQtrText = $( this ).text();
+
+
+
+      revRecQtrVal = $(this).val();  
+
+
+
+     //alert('revRecQtrText'+revRecQtrText+revRecQtrVal);
+
+
+
+    });
+
+
+
+$( "#AcctrepsDropDown option:selected" ).each(function() {
+
+
+
+      AcctrepsText = $( this ).text();
+
+
+
+      Acctrepsval = $(this).val();  
+
+
+
+      //alert('AcctrepsText'+AcctrepsText+Acctrepsval);
+
+
+
+    });
+
+
+
+
+
+
+
+$( "#pssDropDown option:selected" ).each(function() {
+
+
+
+      pssText = $( this ).text();
+
+
+
+      pssVal = $(this).val();  
+
+
+
+      //alert('pssText'+pssText+pssVal);
+
+
+
+    });
+
+
+
+$( "#govvasoDropDown option:selected" ).each(function() {
+
+
+
+      govvasoText = $( this ).text();
+
+
+
+      govvasoval = $(this).val();  
+
+
+
+      // alert('govvasoText'+govvasoText+govvasoval);
+
+
+
+    });
+
+
+
+$( "#schdulesDropDown option:selected" ).each(function() {
+
+
+
+      schdulesText = $( this ).text();
+
+
+
+      schdulesVal = $(this).val();  
+
+
+
+       //alert('schdulesText'+schdulesText+schdulesVal);
+
+
+
+    });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    var loginObject = {zone:zoneText,region:regionText,revrecqtr:revRecQtrText,accountreps:AcctrepsText,pss:pssText,govtvaso:govvasoText,schedules:schdulesText};
+
+
+
+var postData = JSON.stringify(loginObject);
+
+
+
+  //alert('postData'+postData);
+
+
+
+  //alert('postDatazoneVal'+zoneVal+'regionval'+regionval+'revRecQtrVal'+revRecQtrVal+'Acctrepsval'+Acctrepsval+'pssVal'+pssVal+'govvasoval'+govvasoval+'schdulesVal'+schdulesVal);
+
+
+
+  if(zoneText == defaultVal && regionText== defaultVal && revRecQtrText== defaultVal && AcctrepsText== defaultVal && pssText== defaultVal && govvasoText== defaultVal && schdulesText == defaultVal)
+
+
+
+  {
+
+
+
+  //alert('true')
+
+
+
+  $.ajax({
+
+
+
+url: "https://irev-search-new.run.aws-usw02-pr.ice.predix.io/getAllDsvBackLogDetailsNew",
+
+
+
+type: "get", //send it through post method  
+
+
+
+   success: function(responseData) {
+
+
+
+    console.log(responseData);
+
+
+
+    var resultData =JSON.stringify(responseData);
+
+
+
+   console.log(resultData);
+
+
+
+   
+
+
+
+    reloadGridData(responseData);
+
+
+
+
+
+
+
+  },
+
+
+
+  error: function(e) {
+
+
+
+    alert('e'+JSON.stringify(e));
+
+
+
+    console.log('e'+e)
+
+
+
+    //Do Something to handle error
+
+
+
+  }
+
+
+
+});
+
+
+
+
+
+
+
+  }
+
+
+
+else
+
+
+
+{
+
+
+
+  var resultData="";
+
+
+
+  //alert('false')
+
+
+
+  $.ajax({
+
+
+
+  url: "https://irev-search-new.run.aws-usw02-pr.ice.predix.io/getAllDSVBacklogDetailsOnSearchPost",
+
+
+
+type: "post", //send it through post method  
+
+
+
+ data : postData,
+
+
+
+headers : {
+
+
+
+'Content-Type' : 'application/json'
+
+
+
+},
+
+
+
+   success: function(response) {
+
+
+
+      console.log(response);
+
+
+
+   resultData =JSON.stringify(response);
+
+
+
+   console.log(resultData);
+
+
+
+   
+
+
+
+    reloadGridData(response);
+
+
+
+
+
+
+
+  },
+
+
+
+  error: function(e) {
+
+
+
+    alert('e'+JSON.stringify(e));
+
+
+
+    console.log('e'+e)
+
+
+
+    //Do Something to handle error
+
+
+
+  }
+
+
+
+});
+
+
+
+}
+
+
+
+
+
+
+
+  function reloadGridData(newdata){
+
+
+
+// alert('newdata'+newdata);
+
+
+
+
+
+
+
+  //jQuery("#searchItemNbr").jqGrid('GridUnload');
+
+
+
+    jQuery("#searchItemNbr")
+
+
+
+    .jqGrid('setGridParam',
+
+
+
+        { 
+
+
+
+            datatype: 'local',
+
+
+
+            data:newdata
+
+
+
+        })
+
+
+
+    .trigger("reloadGrid");
+
+
+
+
+
+
+
+   
+
+
+
+  }
+
+
+
+
+
+
+
+});
+
+
+
+
+
+
+
+
+
+
+
+});
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+  
