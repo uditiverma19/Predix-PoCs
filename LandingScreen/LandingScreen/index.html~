@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+
+<html lang="en" class="no-js" >
+
+<head>
+
+<meta charset="utf-8" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+<meta name="description" content="" />
+
+<meta name="author" content="" />
+
+<!--[if IE]>
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+<![endif]-->
+
+<title>PREDIX Pocs</title>
+
+<!-- BOOTSTRAP CORE CSS -->
+
+<link href="assets/css/bootstrap.css" rel="stylesheet" />
+
+<!-- ION ICONS STYLES -->
+
+<link href="assets/css/ionicons.css" rel="stylesheet" />
+
+<!-- FONT AWESOME ICONS STYLES -->
+
+<link href="assets/css/font-awesome.css" rel="stylesheet" />
+
+<!-- FANCYBOX POPUP STYLES -->
+
+<link href="assets/js/source/jquery.fancybox.css" rel="stylesheet" />
+
+<!-- STYLES FOR VIEWPORT ANIMATION -->
+
+<link href="assets/css/animations.min.css" rel="stylesheet" />
+
+<!-- CUSTOM CSS -->
+
+<link href="assets/css/style-green.css" rel="stylesheet" />
+
+<!-- HTML5 Shiv and Respond.js for IE8 support of HTML5 elements and media queries -->
+
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+
+<!--[if lt IE 9]>
+
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+
+<![endif]-->
+
+</head>
+
+<body data-spy="scroll" data-target="#menu-section">
+
+<!--MENU SECTION START-->
+
+<div class="navbar navbar-inverse navbar-fixed-top scroll-me" id="menu-section" >
+
+<div class="container">
+
+<div class="navbar-header">
+
+<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+
+<span class="icon-bar"></span>
+
+<span class="icon-bar"></span>
+
+<span class="icon-bar"></span>
+
+</button>
+
+<a class="navbar-brand" href="#">
+
+
+
+Predix Journey 
+
+
+
+</a>
+
+</div>
+
+<div class="navbar-collapse collapse">
+
+<ul class="nav navbar-nav navbar-right">
+
+<li><a href="#home">HOME</a></li>
+
+<li><a href="#services">SERVICES</a></li>
+
+<li><a href="#work">WORK</a></li>
+
+<li><a href="#team">TEAM</a></li>
+
+</ul>
+
+</div>
+
+
+
+</div>
+
+</div>
+
+<!--MENU SECTION END-->
+
+<!--HOME SECTION START-->
+
+<div id="home" >
+
+<div class="container">
+
+<div class="row">
+
+<div class="col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2 ">
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+
+
+<div class="carousel-inner">
+
+<div class="item active">
+
+
+
+<h3 style="margin-right:30px;">
+
+About Predix  
+
+</h3>
+
+<p style="color:#DAEF8A;">
+
+On Sept. 2015 GE has announced the launch of Predix Cloud, the world’s first and only 
+
+cloud solution designed specifically for industrial data and analytics. 
+
+Predix is a powerful new software platform developed
+
+ specifically to connect people, data and machines over the Industrial Internet for better business outcomes. 
+
+ Predix offers a catalog of
+
+  Services that provide core capabilities required by Industrial Internet applications.
+
+</p>
+
+</div>
+
+<div class="item">
+
+<h3 style="margin-right:30px;">
+
+Predix Offerings
+
+</h3>
+
+<p style="color:#DAEF8A;">
+
+Collect key industrial data from your machines and stream it to the Predix cloud.<br/>
+
+Leverage services and development tools, so you can focus on solving problems for customers.<br/>
+
+Use the Predix cloud to deploy scalable services and end-to-end apps in secure environments.
+
+</p>
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+</div>
+
+
+
+
+
+</div>
+
+</div>
+
+<div class="row animate-in" data-anim-type="fade-in-up">
+
+<div class="col-sm-6 col-sm-offset-3 col-md-6 col-md-offset-3 col-lg-8 col-lg-offset-2 scroll-me">
+
+
+
+
+
+<p >
+
+Built on Cloud Foundry, Predix is optimized for secure connectivity and analytics at scale - in the Cloud and on the Edge
+
+
+
+</p>
+
+
+
+
+
+<a href="#services" class=" btn button-custom btn-custom-two">See Service List </a>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+</div>
+
+<!--HOME SECTION END-->
+
+<!--SERVICE SECTION START-->
+
+<section id="services" >
+
+<div class="container">
+
+<div class="row text-center header">
+
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 animate-in" data-anim-type="fade-in-up">
+
+<h3>Our Services</h3>
+
+<hr />
+
+</div>
+
+</div>
+
+<div class="row animate-in" data-anim-type="fade-in-up">
+
+<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+
+<div class="services-wrapper">
+
+<i class="ion-stats-bars"></i>
+
+<h3>Shop Visit Details</h3>
+
+http://predix-alarmservice-sapan-km.grc-apps.svc.ice.ge.com/shopVisitDetailsByEsn<br/><br/>
+
+This service will return the Shop Visit detailed cost incurred (expenditure amount with shop visit Date) 
+
+based on Model and Engine Number.
+
+<br/>
+
+</div>
+
+</div>
+
+<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+
+<div class="services-wrapper" style="word-wrap: break-word;">
+
+<i class="ion-ios-speedometer"></i>
+
+<h3>Overall Equipment Efficiency</h3>
+
+http://predix-alarmservice-sapan-km.grc-apps.svc.ice.ge.com/getEquipmentOEEDetailsWithParam<br/><br/>
+
+Service will return data for overall equipment efficiency, avaibility, performance & quality.
+
+
+
+</div>
+
+</div>
+
+<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+
+<div class="services-wrapper">
+
+<i class="ion-clipboard"></i>
+
+<h3>Fetch all Data</h3>
+
+http://irev-dsv-backlog-service.grc-apps.svc.ice.ge.com/getAllDsvBackLogDetailsNew<br/><br/>
+
+This service can be used to fetch all the backlog details in database to be displayed in table.
+
+Also have a customized version for filter search. 
+
+</div>
+
+</div>
+
+<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+
+<div class="services-wrapper" style="word-wrap: break-word;">
+
+<i class="ion-archive"></i>
+
+<h3>Export to Excel</h3>
+
+http://scp-searchdownload-excel-without-fliter.grc-apps.svc.ice.ge.com/view/getDemandDetailsWithOutFiltersExcel<br/>
+
+Service to download excel report. Customized version also available for filtered search.
+
+</div>
+
+</div>
+
+<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+
+<div class="services-wrapper">
+
+<i class="ion-person"></i>
+
+<h3>Login Service</h3>
+
+http://predix-tracktraceservice-sm.grc-apps.svc.ice.ge.com/login<br/>
+
+Service will validate the user login details.For valid user, it will allow the user to enter the Track & Trace system.
+
+For invalid user it will redirect to  Login page with specific error messages.
+
+</div>
+
+</div>
+
+<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+
+<div class="services-wrapper">
+
+<i class="ion-person-add"></i>
+
+<h3>Register Service</h3>
+
+http://predix-tracktraceservice-sm.grc-apps.svc.ice.ge.com/register<br/><br/>
+
+Service will register a new user. On successful registration, user will be redirected to the Home screen.
+
+</div>
+
+</div>
+
+<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+
+<div class="services-wrapper">
+
+<i class="ion-alert-circled"></i>
+
+<h3>Notification Service</h3>
+
+http://predix-tracktracedashboard.grc-apps.svc.ice.ge.com/getMachineNotification<br/>
+
+Notify the user giving details of machine name, number, working status and other informations.
+
+</div>
+
+</div>
+<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+
+<div class="services-wrapper">
+
+<i class="ion-alert-circled"></i>
+
+<h3>Search Data Service</h3>
+
+https://pdfupload-download-service.run.aws-usw02-pr.ice.predix.io/view/getPdfParserDetailsWithFilter<br/>
+
+This service can be used to fetch all field details in database to be displayed in table.
+
+Also have a customized version for filter search. 
+
+</div>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+<!--SERVICE SECTION END-->
+
+<!--WORK SECTION START-->
+
+<section id="work" >
+
+<div class="container">
+
+<div class="row text-center header animate-in" data-anim-type="fade-in-up">
+
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+<h3>Our Works</h3>
+
+<hr />
+
+</div>
+
+</div>
+
+
+
+<div class="row text-center animate-in" data-anim-type="fade-in-up" id="work-div">
+
+
+<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 code script">
+
+<div class="work-wrapper">
+
+
+
+<a class="fancybox-media" title="Intelligent Revenue Empowerment Visibility" href="https://predix-irevbasic-poc.run.aws-usw02-pr.ice.predix.io" target="_blank">
+
+
+
+<img src="assets/img/portfolio/3.jpg" class="img-responsive img-rounded" alt="" />
+
+</a>
+
+
+
+<h4>iREV</h4>
+
+<h5>Graphical representation of backlogs categorized in the form of Zone, Modality, Credit, Scheduled and Unscheduled for better understanding. We can select different search criteria to view in the tabular format also. </h5>
+</div>
+
+</div>
+
+
+<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 html code">
+
+<div class="work-wrapper">
+
+
+
+<a class="fancybox-media" title="Supplier Collaboration Portal" href="https://predix-ge-scpapps1.run.aws-usw02-pr.ice.predix.io" target="_blank">
+
+
+
+<img src="assets/img/portfolio/5.jpg" class="img-responsive img-rounded" alt="" />
+
+</a>
+
+
+
+<h4>SCP</h4>
+
+<h5>The user can view and modify the Planned Orders. The Planned Orders could be filtered based on 
+
+different criterias like Item Number, Buyer Name, Supplier Name or Business Unit. This also has a feature for exporting the data into an excel sheet. </h5>
+
+</div>
+
+</div>
+
+
+<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+
+<div class="work-wrapper">
+
+
+
+<a class="fancybox-media" title="Overall Equipment Efficiency" href="https://predix-oee.run.aws-usw02-pr.ice.predix.io" target="_blank">
+
+
+
+<img src="assets/img/portfolio/1.jpg" class="img-responsive img-rounded" alt="" />
+
+</a>
+
+
+
+<h4>OEE</h4>
+
+<h5>Created a mock real time industrial data and the calculated values were displayed in OEE, Availability, Performance and Quality gauges and tables. 
+
+We can select any equipment and observe its operation. The gauges and tables auto-refreshing the data every second.
+
+</h5>
+
+</div>
+
+</div>
+
+<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+
+<div class="work-wrapper" style="padding-bottom:70px;">
+
+
+
+<a class="fancybox-media" title="SIMS Metadata Search" href="https://predix-sims-poc4.run.aws-usw02-pr.ice.predix.io" target="_blank" >
+
+
+
+<img src="assets/img/portfolio/9.jpg" class="img-responsive img-rounded" alt="" />
+
+</a>
+
+
+
+<h4 style="padding-top: 50px;">SIMS</h4>
+
+<h5>Using this application documents  which consumes too much time to
+ retreive information could be searched quickly  by using  different filter criterias like File Name , Author Name , Purpose , Modality or File Type.
+
+</h5>
+
+
+</div>
+
+</div>
+
+<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+
+<div class="work-wrapper">
+
+<a class="fancybox-media" title="Track & Trace" href="https://predix-track-traceloginbasic-poct.run.aws-usw02-pr.ice.predix.io/#/" target="_blank">
+
+<img src="assets/img/portfolio/6.jpg" class="img-responsive img-rounded" alt="" />
+
+</a>
+
+<h4>Track & Trace</h4>
+
+<h5>Tracking the performance of machines (Robert Bosch Nutrunner) in the real scenario. New user can register and existing users can login to see all the machine data in the dashboard. Individual machine could be selected to view its status and position for live tracking. </h5>
+
+</div>
+
+</div>
+
+<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+
+<div class="work-wrapper">
+
+<a class="fancybox-media" title="Shop Visit Details" href="http://predix-seed-dev-monalisa.grc-apps.svc.ice.ge.com" target="_blank">
+
+<img src="assets/img/portfolio/2.jpg" class="img-responsive img-rounded" alt="" />
+
+</a>
+
+<h4>Shop Visit Details</h4>
+
+<h5>A dashboard in Predix to represent 
+
+the cost of shop visits made by different Engines w.r.t. shop-visit date. Scroll to view the cost incurred at different time. 
+We can select a paticular duration to view the data manually. This could help in tracking the cost and as well as predictions.
+
+</h5>
+
+</div>
+
+</div>
+
+
+<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 html script">
+
+<div class="work-wrapper">
+
+
+
+<a class="fancybox-media" title="Factory Information System" href="http://predix-fis-ms.grc-apps.svc.ice.ge.com" target="_blank">
+
+
+
+<img src="assets/img/portfolio/4.jpg" class="img-responsive img-rounded" alt="" />
+
+</a>
+
+<h4>FIS</h4>
+
+<h5>Tabular representation for different machine and their status. 
+Individual maichine can be selected to get a detailed view. 
+Their status, yield and other informations related to the machine can be viewed. This could help in live tracking the machine at any location.</h5>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!--WORK SECTION END-->
+
+<!--TEAM SECTION START-->
+
+<section id="team" >
+
+<div class="container">
+
+<div class="row text-center header animate-in" data-anim-type="fade-in-up">
+
+<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-md-offset-4 col-lg-offset-4 col-sm-offset-4">
+
+<h3>Team Members </h3>
+
+<hr />
+
+</div>
+
+</div>
+
+<div class="row animate-in" data-anim-type="fade-in-up">
+
+
+
+<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-md-offset-4 col-lg-offset-4 col-sm-offset-4">
+
+<div class="team-wrapper">
+
+<div class="team-inner" style="background-image: url('assets/img/team/team.png')" >
+
+<a href="#" target="_blank" > <i class="fa fa-twitter" ></i></a>
+
+</div>
+
+<div class="description">
+
+<h3>Predix Army</h3>
+
+<h5> <strong> A Group of Predix Inquisitives </strong></h5>
+
+<p>
+
+Team exploring all the dimensions of Predix.
+
+</p>
+
+<p>
+
+&copy Tech Mahindra Ltd.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+</div>
+
+</div>
+
+</section>
+
+<!--TEAM SECTION END-->
+
+
+
+
+
+<!-- JAVASCRIPT FILES PLACED AT THE BOTTOM TO REDUCE THE LOADING TIME -->
+
+<!-- CORE JQUERY -->
+
+<script src="assets/js/jquery-1.11.1.js"></script>
+
+<!-- BOOTSTRAP SCRIPTS -->
+
+<script src="assets/js/bootstrap.js"></script>
+
+<!-- EASING SCROLL SCRIPTS PLUGIN -->
+
+<script src="assets/js/vegas/jquery.vegas.min.js"></script>
+
+<!-- VEGAS SLIDESHOW SCRIPTS -->
+
+<script src="assets/js/jquery.easing.min.js"></script>
+
+<!-- FANCYBOX PLUGIN -->
+
+<script src="assets/js/source/jquery.fancybox.js"></script>
+
+<!-- ISOTOPE SCRIPTS -->
+
+<script src="assets/js/jquery.isotope.js"></script>
+
+<!-- VIEWPORT ANIMATION SCRIPTS   -->
+
+<script src="assets/js/appear.min.js"></script>
+
+<script src="assets/js/animations.min.js"></script>
+
+<!-- CUSTOM SCRIPTS -->
+
+<script src="assets/js/custom.js"></script>
+
+</body>
+
+
+
+</html>
+
