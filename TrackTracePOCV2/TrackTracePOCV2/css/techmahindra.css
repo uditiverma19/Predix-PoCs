@@ -1,0 +1,165 @@
+/*
+ * It is advised not to edit the smartadmin_production.css
+ * as this will override any changes you make in the
+ * later versions of this theme.
+ *
+ * We advise that you use use this CSS to override
+ * SmartAdmin styles.
+ *
+ * Rename the stylesheet to whatever your liking so it will stay
+ * unique to you with each update of SmartAdmin.
+ */
+
+/*
+ * INDEX
+ *
+ * - HTML
+ * - BODY
+ * - CUSTOM STYLES
+ */
+
+.smart-form formfooter {
+    display: block !important;
+    padding: 7px 14px 15px !important;
+    border-top: 1px solid rgba(0,0,0,.1) !important;
+    background: rgba(248,248,248,.9);
+    height:40px;
+}
+.smart-form formfooter .btn {
+    float: right;
+    height: 31px;
+    margin: 10px 0 0 5px;
+    padding: 0 22px;
+    font: 300 15px/29px 'Open Sans',Helvetica,Arial,sans-serif;
+    cursor: pointer;
+}
+
+-page-header-space {
+    float: right;
+    text-align: right;
+    display: block;
+    vertical-align: middle;
+    padding-top: 10px;
+    line-height: clear;
+}
+.navbar, .navbar-inverse {
+        background: #e51635;
+        background-image: #e51635;
+        background-image: -moz-linear-gradient(top,#e51635,#c6132e);
+        background-image: -webkit-gradient(linear,0 0,0 100%,from(#e51635),to(#c6132e));
+        background-image: -webkit-linear-gradient(top,#e51635,#c6132e);
+        background-image: -o-linear-gradient(top,#e51635,#c6132e);
+        background-image: linear-gradient(to bottom,#e51635,#c6132e);
+}
+.page-footer {
+    background: #efefef;
+    color: black;
+}
+#extr-page {
+    background: #f4f4f4!important;
+}
+
+.content {
+    margin-bottom: 60px;
+}
+.bs-docs-featurette {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #555;
+    text-align: center;
+    background-color: #fff;
+    border-bottom: 1px solid #e5e5e5;
+}
+@media (min-width: 768px)
+    .bs-docs-featurette-title {
+    font-size: 40px;
+}
+.bs-docs-featurette-title {
+    margin-bottom: 5px;
+    font-size: 30px;
+    font-weight: 400;
+    color: #333;
+}
+#logo img {
+
+}
+#header {
+    background: none !important;
+}
+.navbar-inverse .navbar-nav > li > a {
+    color: #fff;
+}
+
+img.offline {
+border-left-color: red!important;
+}
+
+/* Page headers */
+.bs-header {
+  padding: 80px 15px 40px; /* side padding builds on .container 15px, so 30px */
+  font-size: 16px;
+  text-align: center;
+  text-shadow: 0 1px 0 rgba(0,0,0,.15);
+  color: #FC778B;
+  background-color: #e51635;
+  background-image: linear-gradient(to bottom,#e51635,#c6132e)
+  background-image: url(header.png);
+
+}
+.bs-header a {
+  color: #fff;
+  font-weight: normal;
+}
+.bs-header h1 {
+  color: #fff;
+}
+.bs-header p {
+  font-weight: 200;
+  line-height: 1.4;
+}
+.bs-header .container {
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .bs-header {
+    font-size: 30px;
+    text-align: left;
+  }
+  .bs-header h1 {
+    font-size: 100px;
+    line-height: 1;
+  }
+}
+
+@media (min-width: 992px) {
+  .bs-header p {
+
+  }
+}
+
+.navbar-inner {
+    -webkit-box-shadow: 0 3px 3px rgba(0,0,0,0.175);
+    box-shadow: 0 3px 3px rgba(0,0,0,0.175);
+    border: none;
+}
+
+#extr-page-header-space {
+    line-height: 50px!important;
+}
+.navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {
+    background: #c6132e;
+}
+
+.page-footer {
+    background: #efefef!important;
+}
+
+.show-stats .progress {
+    height: 24px!important;
+    border-radius: 0;
+    margin-top: 8px;
+    margin-bottom: 15px;
+}

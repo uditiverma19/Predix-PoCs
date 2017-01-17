@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html data-ng-app="app">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<title>Track & Trace</title>
+
+<!-- Tell the browser to be responsive to screen width -->
+<meta
+	content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+	name="viewport">
+
+
+
+<!-- Theme style -->
+<link href="css/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+
+<!-- Custom Fonts -->
+<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet"
+	type="text/css">
+
+<link rel="stylesheet" href="dist/css/techm.css">
+
+
+<style type="text/css">
+.skin-black .main-header .navbar {
+	background-color: #222;
+}
+
+.skin-black .sidebar-menu>li:hover>a, .skin-blue .sidebar-menu>li.active>a
+	{
+	color: #fff;
+	background: #333;
+	border-left-color: #f6f6f6;
+}
+
+.skin-black .sidebar a {
+	color: #f6f6f6;
+}
+
+.nav>li>a {
+	color: white;
+}
+
+#sideNav {
+	color: white;
+}
+.dropdown-menu {
+min-width:124px;
+padding-right:20px;
+}
+</style>
+</head>
+<body class="hold-transition skin-black sidebar-mini">
+	<div class="wrapper" data-ng-controller="HomeCtrl">
+
+		<header class="main-header">
+			<!-- Logo -->
+			<a id="sideNav" href="#" class="sidebar-toggle"
+				data-toggle="offcanvas" role="button"> <span class="sr-only">Toggle
+					navigation</span>
+			</a> <a class="navbar-brand" href="#/">Predix Track & Trace</a>
+
+			<!-- Header Navbar: style can be found in header.less -->
+			<nav class="navbar navbar-static-top" role="navigation">
+				<!-- Sidebar toggle button-->
+
+				<div class="navbar-custom-menu">
+					<!-- Top Menu Items -->
+
+					<span> <a ng-hide='userAvailable' href='#/login'
+						type="button" class="btn btn-default pull-right"
+						style="margin-top: 8px; margin-right: 8px;">Login</a>
+					</span>
+					<ul class="nav navbar-right" style="margin-top:10px;margin-right:10px;" ng-hide='!userAvailable'>
+						<li class="dropdown"><a href="#" class="dropdown-toggle"
+							data-toggle="dropdown"><i class="fa fa-user"></i> {{user}} <b
+								class="caret"></b></a>
+							<ul class="dropdown-menu">
+
+								<li><a class="btn btn-link" data-ng-click="logOut()"><i
+										class="fa fa-power-off"></i>LogOut</a></li>
+							</ul></li>
+					</ul>
+					<!-- <ul class="nav navbar-nav">
+          
+            Control Sidebar Toggle Button          
+            </ul> -->
+				</div>
+			</nav>
+		</header>
+		<!-- Left side column. contains the logo and sidebar -->
+		<aside class="main-sidebar" style="background-color: #222;">
+			<!-- sidebar: style can be found in sidebar.less -->
+			<section class="sidebar">
+				<!-- Sidebar user panel -->
+				<div class="user-panel" ng-hide='!userAvailable'>
+					<div class="pull-left image">
+						<img src="assets/img/Anuj.jpg" class="img-circle" alt="User Image">
+					</div>
+					<div class="pull-left info">
+						<p style="color:whitesmoke">{{user}}</p>
+						<a href="#"><i class="fa fa-circle text-success"></i> Online</a>
+					</div>
+				</div>
+				<!-- /.search form -->
+				<!-- sidebar menu: : style can be found in sidebar.less -->
+				<ul class="sidebar-menu">
+					<li class="active treeview"><a href="#/"><i
+							class="fa fa-home"></i><span>Home</span></a></li>
+					<li class="treeview"><a  href="https://predix-track-tracedashboardbasic-poct.run.aws-usw02-pr.ice.predix.io/#/app/dashboard/"><i
+							class="fa fa-dashboard"></i><span>Dashboard</span><i
+							class="fa fa-angle-left pull-right"></i>
+					</a></li>
+					<li class="treeview"><a  href=""><i class="fa fa-globe"></i><span>LiveTracking</span><i
+							class="fa fa-angle-left pull-right"></i></a></li>
+
+					<li class="treeview"><a  href="#"> <i class="fa fa-wrench"></i>
+							<span>Worker Managements</span> <i
+							class="fa fa-angle-left pull-right"></i>
+					</a>
+						<ul class="treeview-menu">
+							<li><a  href="#/wrkList"><i class="fa fa-fw fa-table"></i>Workers
+									List</a></li>
+							<li><a  href="#/createWrk"><i class="fa fa-fw fa-edit"></i>Create
+									Workers</a></li>
+									
+									
+						</ul></li>
+				</ul>
+			</section>
+			<!-- /.sidebar -->
+		</aside>
+
+		<!-- Content Wrapper. Contains page content -->
+		<div class="content-wrapper">
+			<div class="content">
+						<div ng-view></div>
+					
+				</div>
+			</div>
+		</div>
+		<!-- /.content-wrapper -->
+		<footer class="main-footer">
+			<div class="pull-right hidden-xs">
+				<b>Version</b> 1.0.0
+			</div>
+			<strong>Copyright &copy; 2016-2017 <a href="#">Tech
+					Mahindra Ltd</a>.
+			</strong> All rights reserved.
+		</footer>
+	</div>
+
+	<!-- jQuery 2.1.4 -->
+	<script src="js/jquery.js"></script>
+
+
+	<script src="js/angularjs/angular.min.js"></script>
+	<script src="js/angularjs/angular-route.min.js"></script>
+	<script src="js/angularjs/angular-cookies.min.js"></script>
+
+	<script src="app.js"></script>
+	<script src="app-services/authentication.service.js"></script>
+	<script src="app-services/flash.service.js"></script>
+
+	<!-- Real user service that uses an api -->
+	<!-- <script src="app-services/user.service.js"></script> -->
+
+	<!-- Fake user service for demo that uses local storage -->
+	<script src="app-services/user.service.local-storage.js"></script>
+
+	<script src="app-controller/commonController.js"></script>
+
+	<!-- Bootstrap Core JavaScript -->
+	<script src="css/bootstrap/js/bootstrap.min.js"></script>
+
+	<!-- Bootstrap WYSIHTML5 -->
+	<!-- <script
+		src="plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js"></script> -->
+	<!-- Slimscroll -->
+
+	<!-- AdminLTE App -->
+	<script src="dist/js/app_modify.js"></script>
+
+</body>
+</html>

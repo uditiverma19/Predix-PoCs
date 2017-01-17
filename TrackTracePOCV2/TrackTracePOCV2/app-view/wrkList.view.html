@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <style>
+  #heading h3, h4 { display: inline; }
+  </style>
+</head>
+<body>
+
+<div class="container">
+ <h1 style='margin-top:0in'><span >Workers</span></h1>
+      <div data-ng-controller=WorkerCtrl > 
+<div id="heading">
+<h3><i class="fa fa-home"></i>Workforce</h3><h4> &gt;Overview</h4>
+</div>
+<br/>
+                
+  <table class="table table-bordered">
+    <thead>
+    <tr><td colspan="6"><i class="fa fa-table"></i>
+    <b>Workers
+   List</b>
+   </td></tr>
+      <tr>
+       <th>#</th>
+      <th><b>F.Name</b></th>
+      <th><b>L.Name</b></th>
+      <th><b>Email</b></th>
+    <th><b>City</b></th>
+    <th><b>Status</b></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr  data-ng-repeat="worker in workers">
+         <td >
+ {{worker.id}}
+  </td>
+  <td >
+  {{worker.firstname}}
+  </td>
+  <td >
+ {{worker.lastname}}
+  </td>
+  <td >
+  {{worker.email}}
+  </td>
+  <td >
+  {{worker.city}}
+  </td>
+   <td >
+ {{worker.status}}
+  </td> 
+      </tr>
+      
+    </tbody>
+  </table>
+  <p ><span >&nbsp;</span></p>
+</div></div>
+
+</body>
+</html>
+

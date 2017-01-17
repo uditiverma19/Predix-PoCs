@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <style>
+  #heading h3, h4 { display: inline; }
+  </style>
+</head>
+<body>
+
+<div class="container">
+ <h1 style='margin-top:0in'><span >Tools List</span></h1>
+      <div data-ng-controller=ToolCtrl> 
+    <div id="heading">
+      
+<h3><i class="fa fa-home"></i>Tool Management</h3><h4> &gt;Overview</h4>
+
+</div>  <br/>              
+  <table class="table table-bordered">
+   
+      
+    <thead>
+    <tr><td colspan="8"><i class="fa fa-table" ></i>
+    <b>Tools
+   List</b>
+   </td></tr>
+ <tr>  
+       <th>#</th>
+      <th><b>Connection</b></th>
+      <th><b>Status</b></th>
+      <th><b>Serial No.</b></th>
+    <th><b>Name</b></th>
+    <th><b>IP</b></th>
+    <th><b>Type</b></th>
+    <th><b>Battery%</b></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr  data-ng-repeat="tool in tools">
+         <td >
+ {{tool.connection}}
+  </td>
+  <td >
+  {{tool.status}}
+  </td>
+  <td >
+ {{tool.serialNo}}}
+  </td>
+  <td >
+  {{tool.name}}
+  </td>
+  <td >
+  {{tool.modelName}}
+  </td>
+  <td >
+ {{tool.IP}}
+  </td>
+   <td >
+ {{tool.type}}
+  </td>
+   <td >
+ {{tool.battery}}
+  </td>
+      </tr>
+      
+    </tbody>
+  </table>
+  <p ><span >&nbsp;</span></p>
+</div></div>
+
+</body>
+</html>

@@ -1,0 +1,8 @@
+---
+applications:
+  - name: predix-track-traceloginBasic-poccs
+    host: predix-track-traceloginBasic-poccs
+    buildpack: https://github.com/muymoo/staticfile-buildpack.git
+    path: .
+    memory: 64M
+    stack: cflinuxfs2
